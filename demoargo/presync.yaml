@@ -12,6 +12,6 @@ spec:
       - name: slack-notification
         image: alpine:latest
         command:
-        - "echo l'Application sera synchronisé avec un nouvel état désiré"
+        - echo "l'Application sera synchronisé avec un nouvel état désiré"
       restartPolicy: Never
           
