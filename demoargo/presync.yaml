@@ -4,7 +4,7 @@ metadata:
   generateName: demoargo-not
   annotations:
     argocd.argoproj.io/hook: PreSync
-    #argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/hook-delete-policy: Never
 spec:
   template:
     spec:
