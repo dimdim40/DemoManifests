@@ -4,7 +4,7 @@ metadata:
   generateName: demoargo-not
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: Never
+    #argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
@@ -13,4 +13,5 @@ spec:
         image: alpine:latest
         command:
         - "echo l'Application sera synchronisé avec un nouvel état désiré"
+      restartPolicy: Never
           
