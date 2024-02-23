@@ -5,3 +5,12 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    spec:
+template:
+  spec:
+    containers:
+    - name: slack-notification
+      image: alpine:latest
+      command:
+        - "echo l'Application sera synchronisé avec un nouvel état désiré"
+          
